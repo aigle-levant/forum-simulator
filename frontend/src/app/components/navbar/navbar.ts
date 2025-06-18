@@ -1,10 +1,13 @@
 import { Component } from '@angular/core';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { faReddit } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-navbar',
-  imports: [],
+  standalone: true,
+  imports: [FontAwesomeModule],
   templateUrl: './navbar.html',
-  styleUrl: './navbar.css'
+  styleUrl: './navbar.css',
 })
 export class Navbar {
   isMobileMenuOpen = false;
@@ -12,4 +15,5 @@ export class Navbar {
   toggleMobileMenu(): void {
     this.isMobileMenuOpen = !this.isMobileMenuOpen;
   }
+  faRedditIcon = faReddit;
 }
