@@ -1,0 +1,70 @@
+<div id="disclaimer-form-wrapper" class="bg-[var(--white)] font-sans text-black">
+    <p>Disclaimer!</p>
+    <div id="btn-group">
+        <button class="btn" type="button" (click)="activeBox = 1">Normal</button>
+        <button class="btn" type="button" (click)="activeBox = 2">Simplified</button>
+    </div>
+    <div id="text-content-wrapper" class="border-[var(--primary)]">
+        @if (activeBox===1) {
+        <p>
+            This is to certify that you, the end user, are liable to the following conditions:
+
+            1. You may not submit:
+            - Personally identifiable information (PII). This includes (but
+            is not limited to) phone numbers, email addresses, addresses, contact information, identifiying
+            documents, bank account number, etc.
+            - Financial/medical data
+            - Links to unmoderated platforms (Telegram, WhatsApp, etc.)
+            - Illegal, discriminatory and harmful content.
+
+            2. Your content may be used to generate the content in this website for your personal entertainment
+            for the following fields: title, content. By using this service, you agree to have your
+            information stored and used by large-language models. You may, however, opt-out of future training via
+            email request.
+
+            3. You warrant that:
+
+            - Content is original or you have redistribution rights
+            - Does not infringe copyright/trademark
+            - Does not defame third parties
+
+            4. You acknowledge that Forum Simulator:
+
+            - Is not affiliated with Reddit, StackOverflow, or Meta.
+            - Uses synthetic/sanitized data
+            - May retain moderated content for legal compliance
+        </p>
+        }
+        @else if (activeBox===2) {
+        <p>
+            This is to remind you, the end user, that:
+
+            - Whatever you submit in the form after this message will be used to feed my models for generating
+            the following: title, content.
+
+            - DO NOT write any Personal Identifying Information (examples could be your phone number, email, bank
+            account no.,
+            identifying documents, your mom's maiden name, etc.). Respect your own privacy, it's cool! If you want to
+            use any sorta
+            emails, phone numbers for that content (you tryhard), just ask!
+
+            - If you submit any (I repeat, any) content and then come around crying 'I want it removed!',
+            understand that I'll literally not be able to help you out of this mess. Sorting through +10k submissions,
+            looking up that particular content, then deleting it is a painstaking process. I'm really sorry, bud.
+
+            - If you want your submission to stay outta the grubby hands of my models, feel free to email me at
+            aiglelevant&#64;gmail.com. (Like asking a cat to return a dead bird, but we’ll try).
+
+            - Don't you DARE post any sorta illegal, harmful, doxxable, discriminatory content. I'll remove it, and
+            expect no mercy from my end.
+
+            - This is a forum simulator. It's not a copy of Reddit, LinkedIn, etc. Please don't sue me. Any
+            resemblance is a pure coincidence, I swear.
+
+            - Never, ever use WhatsApp or Telegram as source links (will result in removal + ban). I know.
+
+            Thank you for feeding my models. I'm assure they appreciate your help!
+        </p>
+        }
+    </div>
+    <button type="button">I understand</button>

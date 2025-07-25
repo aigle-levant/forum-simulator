@@ -10,14 +10,15 @@ module.exports = {
     theme: {
         extend: {
             colors: {
-                red: "var(--color-red)",
-                lightred: "var(--color-light-red)",
-                black: "var(--color-black)",
-                white: "var(--color-white)",
-                grey: "var(--color-grey)"
+                primary: "var(--primary)",
+                secondary: "var(--secondary)",
+                black: "var(--black)",
+                white: "var(--white)",
+                accent: "var(--accent)",
             },
             fontFamily: {
-                reddit: "var(--font-reddit)",
+                sans: ["var(--font-sans)"],
+                decor: ["var(--font-decor)"],
             },
         },
     },

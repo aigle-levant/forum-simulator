@@ -1,34 +1,46 @@
-<footer id="footer" class="bg-red text-white flex flex-col">
+<footer id="footer" class="bg-[var(--primary)] text-white font-sans flex flex-col">
     <div class="flex flex-col sm:flex-row">
         <div id="credits" class="border-2 border-white px-4 sm:px-10 py-10">
-            <h2 class="text-3xl">Subreddit Simulator</h2>
-            <p class="text-l">MADE BY AIGLE</p>
+            <h2 class="text-3xl font-bold font-decor">Forum Simulator</h2>
+            <p class="text-lg font-decor">MADE BY AIGLE</p>
         </div>
         <div id="page-links"
             class="border-2 border-white flex-grow px-4 py-4 flex flex-row justify-around sm:justify-evenly">
             <div id="page-links-left">
-                <p class="text-xl font-bold">PAGE LINKS</p>
-                <ul>
-                    <li><a href="/" class="focus:text-light-red hover:text-light-red">HOME</a></li>
-                    <li><a href="/about" class="focus:text-light-red hover:text-light-red">ABOUT</a></li>
-                    <li><a href="/randomize" class="focus:text-light-red hover:text-light-red">RANDOMIZE</a></li>
+                <p class="text-xl font-bold mb-2">PAGE LINKS</p>
+                <ul class="space-y-1">
+                    <li><a href="/"
+                            class="transition-colors duration-200 hover:text-[var(--accent)] focus:text-[var(--accent)]">HOME</a>
+                    </li>
+                    <li><a href="/about"
+                            class="transition-colors duration-200 hover:text-[var(--accent)] focus:text-[var(--accent)]">ABOUT</a>
+                    </li>
                 </ul>
             </div>
             <div id="page-links-right">
-                <ul>
-                    <li><a href="/contact" class="focus:text-light-red hover:text-light-red">CONTACT US</a></li>
-                    <li><a href="/posts" class="focus:text-light-red hover:text-light-red">POSTS</a></li>
+                <ul class="space-y-1">
+                    <li><a href="/randomize"
+                            class="transition-colors duration-200 hover:text-[var(--accent)] focus:text-[var(--accent)]">RANDOMIZE</a>
+                    </li>
+                    <li><a href="/contact"
+                            class="transition-colors duration-200 hover:text-[var(--accent)] focus:text-[var(--accent)]">CONTACT
+                            US</a>
+                    </li>
                 </ul>
             </div>
         </div>
-
     </div>
 
-    <div id="social-links" class="border-2 border-white px-4 py-4 sm:text-center">
-        <a href="https://www.linkedin.com/in/prajanya-subramanian/" class="hover:text-grey">LINKEDIN . </a>
-        <a href="https://github.com/aigle-levant/subreddit-simulator" class="hover:text-grey">GITHUB . </a>
-        <a href="https://x.com/aiglelevant" class="hover:text-grey">TWITTER [NOW KNOWN AS X] . </a>
-        <a href="https://portfolio-kappa-mocha-89.vercel.app/" class="hover:text-grey">PORTFOLIO . </a>
-        <a href="mailto:officialprajanya@gmail.com" class="hover:text-grey">EMAIL . </a>
+    <div id="social-links" class="border-2 border-white px-4 py-4 text-center space-x-2 text-sm sm:text-base">
+        <a href="https://www.linkedin.com/in/prajanya-subramanian/"
+            class="hover:text-[var(--accent)] transition-colors duration-200">LINKEDIN</a> ·
+        <a href="https://github.com/aigle-levant/subreddit-simulator"
+            class="hover:text-[var(--accent)] transition-colors duration-200">GITHUB</a> ·
+        <a href="https://x.com/aiglelevant"
+            class="hover:text-[var(--accent)] transition-colors duration-200">TWITTER</a> ·
+        <a href="https://portfolio-kappa-mocha-89.vercel.app/"
+            class="hover:text-[var(--accent)] transition-colors duration-200">PORTFOLIO</a> ·
+        <a href="mailto:officialprajanya@gmail.com"
+            class="hover:text-[var(--accent)] transition-colors duration-200">EMAIL</a>
     </div>
 </footer>

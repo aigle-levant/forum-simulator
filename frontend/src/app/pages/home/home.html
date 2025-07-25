@@ -2,20 +2,20 @@
     <section id="hero" class="flex flex-col justify-center items-center text-justify mt-4">
         <h1 class="text-4xl text-red my-2">100% AI-Generated, <br>0% Human Dignity.</h1>
         <p class="text-grey p-2 sm:mx-10">
-            Like Fine-Tuning LLMs? Here, the Internet does it for you. That too, for free. Search your favourite
-            subreddit, and get back a post.
+            Like Fine-Tuning LLMs? Here, the Internet does it for you. That too, for free.
         </p>
         <div id="form-element" class="my-4 p-2">
             <form id="form" class="flex flex-col justify-center items-center">
-                <input type="text"
-                    class="bg-white placeholder:text-grey text-center w-[90%] focus:border-red rounded-full p-2 border-neutral-950 border-1"
-                    name="subreddit" required placeholder="r/subredditName" />
                 <button type="submit" id="sub-btn"
-                    class="bg-red focus:bg-white focus:text-red hover:bg-orange-950 text-white p-2 w-[50%] rounded-full my-4">Submit</button>
-                <p class="my-4 text-grey p-2">Or, hit the randomizer and hope for the best!</p>
-                <button type="button" id="rand-btn"
-                    class="bg-light-red focus:bg-white focus:text-red hover:bg-orange-950 text-white p-2 w-[50%] rounded-full my-4">Randomize!</button>
+                    class="bg-[var(--primary)] focus:bg-white focus:text-red hover:bg-orange-950 text-white p-4 px-6 rounded-full font- my-4">Generate
+                    post</button>
+                <button type="submit" id="sub-btn"
+                    class="bg-[var(--secondary)] focus:bg-white hover:text-[var(--secondary)] hover:bg-[var(--primary)] text-black p-4 px-6 rounded-full my-4">Submit
+                    content</button>
             </form>
         </div>
+        <p class="my-4 text-grey p-2">Disclaimer - Generated content
+            is AI-created. Not affiliated with Reddit,
+            stackOverFlow, LinkedIn.</p>
     </section>
 </main>

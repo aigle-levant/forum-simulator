@@ -1,0 +1,13 @@
+<div id="post-form" class="flex flex-col p-4 m-4 bg-white">
+    <p class="text-xl text-primary py-2">Post to Community</p>
+    <form id="form">
+        <label for="title" class="text-black font-sans">Title</label>
+        <input name="title" type="text" class="border-zinc-400 border placeholder:text-zinc-400 focus:border-accent"
+            [formControl]="postTitle" />
+        <label for="content" class="text-black font-sans">Content</label>
+        <input name="content" type="text" class="border-zinc-400 border placeholder:text-zinc-400 focus:border-accent"
+            [formControl]="postContent" />
+        <label for="community" class="text-black font-sans">Community</label>
+        <button id="post-btn" type="submit" class="text-white px-4 py-1 bg-primary">Publish!</button>
+    </form>
+</div>

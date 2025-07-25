@@ -1,33 +1,26 @@
-<header id="header" class="shadow-lg w-[100%] bg-red">
-    <nav id="navbar" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8a">
+<header id="header" class="shadow-lg w-full bg-[var(--primary)] font-sans">
+    <nav id="navbar" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center h-16">
             <div class="flex items-center">
-                <div class="flex-shrink-0">
-                    <div class="w-8 h-8 bg-white rounded-full flex items-center justify-center m-3">
-                        <fa-icon [icon]="faRedditIcon" style="color: #ff4500;"></fa-icon>
-                    </div>
-                </div>
-                <span class="ml-3 text-white font-bold text-xl mx-3">Subreddit Simulator</span>
+                <span class="ml-3 text-[var(--white)] font-bold text-xl mx-3 font-decor">Forum Simulator</span>
             </div>
 
             <!-- Desktop Menu -->
             <div class="hidden md:block">
                 <div class="ml-10 flex items-baseline space-x-4">
                     <a href="/"
-                        class="text-white hover:bg-lightred hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">Home</a>
-                    <a href="/posts"
-                        class="text-white hover:bg-lightred hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">Posts</a>
+                        class="text-[var(--white)] hover:bg-[var(--accent)] hover:text-[var(--white)] px-3 py-2 rounded-md text-sm font-sans font-medium transition-colors duration-200">Home</a>
                     <a href="/about"
-                        class="text-white hover:bg-lightred hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">About</a>
+                        class="text-[var(--white)] hover:bg-[var(--accent)] hover:text-[var(--white)] px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">About</a>
                     <a href="/contact"
-                        class="text-white hover:bg-lightred hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">Contact</a>
+                        class="text-[var(--white)] hover:bg-[var(--accent)] hover:text-[var(--white)] px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">Contact</a>
                 </div>
             </div>
 
             <!-- Mobile menu button -->
             <div class="md:hidden">
                 <button type="button"
-                    class="text-white hover:bg-lightred hover:text-white inline-flex items-center justify-center p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white transition-colors duration-200"
+                    class="text-[var(--white)] hover:bg-[var(--accent)] hover:text-[var(--white)] inline-flex items-center justify-center p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-inset focus:ring-[var(--white)] transition-colors duration-200"
                     (click)="toggleMobileMenu()" [attr.aria-expanded]="isMobileMenuOpen" aria-controls="mobile-menu"
                     aria-label="Toggle menu">
                     <svg class="h-6 w-6" [class.hidden]="isMobileMenuOpen" fill="none" viewBox="0 0 24 24"
@@ -44,18 +37,19 @@
             </div>
         </div>
 
+        <!-- Mobile Menu -->
         <div class="md:hidden" id="mobile-menu" [class.hidden]="!isMobileMenuOpen">
             <div
-                class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-red border-t border-lightred flex flex-col items-center justify-center">
+                class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-[var(--primary)] border-t border-[var(--accent)] flex flex-col items-center justify-center">
                 <a href="/"
-                    class="text-white hover:bg-lightred hover:text-white block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200">Home</a>
+                    class="text-[var(--white)] hover:bg-[var(--accent)] hover:text-[var(--white)] block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200">Home</a>
                 <a href="/about"
-                    class="text-white hover:bg-lightred hover:text-white block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200">About</a>
+                    class="text-[var(--white)] hover:bg-[var(--accent)] hover:text-[var(--white)] block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200">About</a>
                 <a href="/contact"
-                    class="text-white hover:bg-lightred hover:text-white block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200">Contact
+                    class="text-[var(--white)] hover:bg-[var(--accent)] hover:text-[var(--white)] block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200">Contact
                     us</a>
                 <a href="/post"
-                    class="text-white hover:bg-lightred hover:text-white block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200">Posts</a>
+                    class="text-[var(--white)] hover:bg-[var(--accent)] hover:text-[var(--white)] block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200">Posts</a>
             </div>
         </div>
     </nav>

@@ -1,18 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
-@import url('https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitcount:wght@300&display=swap');
 @import "tailwindcss";
 /* @import "tailwindcss/preflight"; */
 @tailwind utilities;
 
-@theme {
-    --color-red: #FF4500;
-    --color-light-red: #FF8254;
-    --color-black: #000;
-    --color-white: #fff;
-    --color-grey: #585858;
-    --font-reddit: "Reddit Sans", sans-serif;
+@font-face {
+    font-family: 'Switzer';
+    src: url('/assets/fonts/Switzer-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
 }
 
-* {
-    font-family: var(--font-reddit);
+@theme {
+    --primary: #A8141E;
+    --secondary: #FDEFD3;
+    --black: #040316;
+    --white: #FBFBFE;
+    --accent: #669BBC;
+    --font-sans: "Switzer", sans-serif;
+    --font-decor: "Bitcount", sans-serif;
 }
